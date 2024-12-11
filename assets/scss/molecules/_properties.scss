@@ -1,0 +1,78 @@
+.va-property{
+    background-color: #000;
+    color: #fff;
+    padding-top: 50px;
+    padding-bottom: 50px;
+    &__wrap{
+    .prop{
+                color: #cc0000;
+                font-weight: 600;
+                padding-bottom: 20px;
+                text-align: center;
+            }
+            h2{
+                font-size: 35px;
+                font-weight: bold;
+                text-align: center;
+            }
+        
+    }
+    &__set1{
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        justify-content: center;
+        padding-top: 40px;
+        width: 100%;
+        gap: 20px;
+        background-color: #000;
+    }
+}
+@include tablet-pro{
+    .va-property{
+        &__set1{
+            gap: 20px;
+        }
+    }
+    .card{
+        width: 300px;
+     }
+}
+@include mobile{
+    .va-property{
+        &__set1{
+            padding-top: 0px;
+        }
+        &__wrap{
+            h2{
+                font-size: 20px;
+                padding-bottom: 20px;
+            }
+        }
+        
+    }
+    .card{
+        width: 100%;
+        
+    }
+    
+}
+
+@include tablet{
+    .va-property{
+        &__wrap{
+                    h2{
+                        padding-bottom: 60px;
+                    }
+                
+            }
+        &__set1{
+            gap: 20px;
+            padding-top: 0px;
+        }
+        .card{
+           width: 340px;
+        }
+    }
+}
+

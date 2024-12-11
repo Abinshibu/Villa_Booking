@@ -1,0 +1,18 @@
+.va-videobox{
+    padding: 20px;
+    border-radius: 10px;
+    border: 1px solid #ffffff96;
+    width: 190px;
+    display: flex;
+    flex-direction: row;
+    gap: 10px;
+    background-color: #33262698;
+    box-shadow: rgba(245, 84, 84, 0.15) 1.95px 1.95px 2.6px;
+    
+    &__num{
+        font-size: 30px;
+        color: #ec0606c9;
+        font-weight: bold;
+    }
+
+}

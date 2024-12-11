@@ -1,0 +1,23 @@
+.vp-box{
+    padding: 20px;
+    border-radius: 20px;
+    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+    width: 300px;
+    display: flex;
+    align-items: center;
+    border: 1px solid #ffffff8c;
+    background-color: #2e252577;
+    &__info{
+        padding-left: 30px;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+    }
+    &__call{
+        font-weight: bold;
+        color: #ffffff;
+    }
+    &__number{
+        color: #ffffff;
+    }
+}

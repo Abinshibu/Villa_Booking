@@ -1,0 +1,148 @@
+@import 'https://fonts.googleapis.com/css?family=Raleway';
+
+.va-navbar {
+  position: fixed;
+  top: 0;
+  width: 100%;
+  padding: 20px 0px;
+  z-index: 1000;
+  background-color: #000000;
+  color: #ffffff;
+  box-shadow: 0 5px 5px rgba(0, 0, 0, 0.1);
+}
+
+.va-navbar .navbar__logo {
+  font-family: "Sixtyfour Convergence", serif;
+  font-optical-sizing: auto;
+  font-weight: 400;
+  font-style: normal;
+  font-size: 25px;
+  margin-right: auto;
+}
+
+.va-navbar .navbar-nav .nav-link {
+  font-family: "Raleway", sans-serif;
+  color: #ffffff;
+  font-size: 13px;
+  font-weight: 500;
+  padding: 10px 15px;
+  text-decoration: none;
+  position: relative;
+  transition: color 0.3s ease, transform 0.3s ease;
+  margin-left: 30px;
+}
+
+.va-navbar .navbar-nav .nav-link:hover {
+  color: #cc0000;
+  transform: scale(1.1);
+}
+
+.va-navbar .navbar-nav .nav-link.active {
+  color: #cc0000;
+  font-weight: bold;
+  border-bottom: 1px double #cc0000;
+  transform: scale(1.03);
+  transition: color 0.3s ease, transform 0.3s ease;
+}
+
+.va-navbar .navbar__book {
+  display: flex;
+  align-items: center;
+  background-color: #161616;
+  color: #ffffff;
+  padding-right: 20px;
+  padding-top: 2px;
+  padding-bottom: 2px;
+  border-radius: 25px;
+  font-size: 14px;
+  font-weight: bold;
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+
+.va-navbar .navbar__book:hover {
+  background-color: #000000;
+  color: #cc0000;
+}
+
+.va-navbar .navbar__book .icon {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #cc0000;
+  color: #ffffff;
+  width: 30px;
+  height: 30px;
+  border-radius: 50%;
+  margin-right: 10px;
+}
+
+.navbar-schedule{
+  margin-left: 30px;
+}
+.navbar-toggler-icon{
+  background-color: #000000;
+  color: #ffffff;
+}
+
+
+
+@include mobile-tablet {
+  .va-navbar .navbar-nav .nav-link{
+    margin-left: 0px;
+  }
+  .va-navbar .navbar-nav .nav-link.active {
+    border-bottom: none;
+    
+  }
+
+  .va-navbar {
+    &__wrap {
+      flex-direction: column;
+      
+      height: auto;
+    }
+  }
+
+  .navbar-toggler:focus {
+    box-shadow: none;
+  }
+
+  .navbar__logo {
+    padding-top: 10px;
+  }
+
+  .navbar-nav .nav-link {
+    text-align: center;
+  }
+
+  .navbar__section {
+    width: 100%;
+    flex-direction: column;
+    height: auto;
+    padding: 10px;
+  }
+
+  .navbar__section a {
+    width: 100%;
+    padding: 5px;
+  }
+  .navbar-schedule{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    
+  }
+  .navbar-schedule{
+    margin-left: 0px;
+  }
+  .navbar__book {
+    margin-top: 5px;
+    width: 50%;
+  }
+}
+@include tablet{
+  .navbar__book {
+    width: 30%;
+  }
+}
